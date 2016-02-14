@@ -1,0 +1,36 @@
+//7.5 Iput funciton example
+
+var w = 900
+var h = 300
+var my_para =0
+var pack =0
+
+function setup(){
+  createCanvas(w,h)
+background(110,215)
+
+my_para = createP ("Sorrow is the best")
+my_para.mouseOver(overIt)
+my_para.mouseOut(outIt)
+
+pack = createInput("Enter my Lord")
+pack.size(900,25)
+pack.changed(nike)
+}
+
+function nike(){
+my_para.html(pack.value())
+}
+
+function draw (){
+
+}
+
+
+function overIt(){
+  my_para.html("I am angry rn")
+}
+
+function outIt(){
+  my_para.html("Sorrow is the best")
+}

@@ -1,0 +1,38 @@
+//7.10 Callbacks on multiple DOM Elements
+
+var w = 900
+var h = 300
+var paras = 0
+function setup(){
+  createCanvas(w,h)
+background(110,215)
+
+manyP()
+}// setup Ends
+
+//
+function manyP(){
+
+for (var i =0; i < 100; i++){var para = createP('rainbows !')
+  para.position(random(1110)+220, random(510))
+}
+
+paras = selectAll("p")
+for (var i = 0; i<paras.length; i++){
+  paras[i].mouseOver(high)
+  paras[i].mouseOut(unhigh)
+
+}
+
+}// many p Ends
+
+//
+function high (){
+this.style("background-color", "pink")
+  this.style("padding","16px")
+}
+
+function unhigh(){
+this.style("padding","4px")
+this.style("background-color", "black")
+}

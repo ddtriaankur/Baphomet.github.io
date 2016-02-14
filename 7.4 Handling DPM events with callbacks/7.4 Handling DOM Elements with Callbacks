@@ -1,0 +1,30 @@
+//7.4 Handling DOM Elements with Callbacks
+
+var bgcolor;
+var butt ;
+var shape;
+
+function setup() {
+  createCanvas(900,450)
+  bgcolor= color(200) ;
+ butt =  createButton('This is my butt !! on')
+ butt.mousePressed(changeNow);
+
+}
+
+function changeNow(){
+  bgcolor = color(random(255))
+  // shape = ellipse (100,100,40,40)
+
+}
+
+// function mousePressed (){
+//   changeColor()
+// }
+
+function draw() {
+  background(bgcolor)
+ fill(255,0,175)
+ shape = rect(100,100,50,50)
+
+}

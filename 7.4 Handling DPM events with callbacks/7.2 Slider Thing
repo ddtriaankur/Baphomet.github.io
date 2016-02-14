@@ -1,0 +1,17 @@
+//7.2 Slider Thing
+var slider
+var val =0
+function setup(){
+  createCanvas(900,450)
+  slider = createSlider(0,255,111)
+  slider.position(900,110)
+  slider.style('width','80px')
+  var link = createA('https://www.facebook.com/?_rdr=p',"Go to my facebook bhai",parent)
+  link.position(900,150)
+}
+
+function draw (){
+background(val,50,22)
+   val = slider.value()
+
+}

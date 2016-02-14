@@ -1,0 +1,33 @@
+// 7.2 Creating HTML Element with JavaScript
+
+function setup (){
+//  createCanvas (900,450)
+  createImg('http://p5js.org/img/asterisk-01.png');
+}
+
+
+function mousePressed (){
+  var imp =  createImg('http://p5js.org/img/asterisk-01.png');
+}
+
+function draw (){
+//  background(10,22,33)
+
+  noStroke()
+  fill(222,11,2)
+  rect(100,100,50,50)
+  textSize(32)
+  fill (0,111,66)
+  text("khaa mar gaya "+"aur tu bata",400,100)
+
+
+}
+
+/*or this
+
+
+var img;
+function setup() {
+  img = createImg('http://p5js.org/img/asterisk-01.png');
+}
+*/

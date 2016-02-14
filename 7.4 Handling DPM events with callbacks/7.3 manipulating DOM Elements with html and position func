@@ -1,0 +1,26 @@
+//7.3 manipulating DOM Elements with html and position func.
+var h1
+var x= y= 111
+
+
+function setup(){
+  createCanvas(900,400)
+  background(155)
+ h1 = createElement('h1','HEADER IS MY THING !!!')
+frameRate(15)}
+
+function draw (){
+  var a = mouseX
+  var b = mouseY
+
+  if (mouseIsPressed){
+    x = a
+    y = b}
+
+
+    h1.position (x,y)
+}
+
+function mousePressed (){
+  h1.html("Hello we have changed now")
+}

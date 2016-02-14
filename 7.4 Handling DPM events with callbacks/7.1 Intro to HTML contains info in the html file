@@ -1,0 +1,16 @@
+//7.1 Intro to HTML contains info in the html file
+var h1
+var x= y= 111
+
+
+function setup(){
+  createCanvas(900,400)
+
+ }
+
+function draw (){
+    background(155)
+
+    fill(22,111,22)
+    rect (100,100,50,50)
+}
